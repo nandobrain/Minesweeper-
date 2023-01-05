@@ -47,7 +47,112 @@ table {
 	border-spacing: 0;
 }
 
-h1 {
-    color: red;
+
+
+
+main {
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.header {
+    height: 50px;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid black;
+    background-color: rgb(233, 205, 68);
+} 
+
+
+
+
+.board {
+        width: 600px;
+        height: 600px;
+        border: 5px solid black;
+        background-color: rgb(242, 119, 33);;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap
+    }
+    
+.board div {
+        width: 58px;
+        height: 58px;
+        border: 1px solid rgb(233, 205, 68);;
+        
+        /* text */
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+.footer {
+        height: 60px;
+        width: 600px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 5px solid black;
+        background-color: rgb(233, 205, 68);
+    }
+    
+.tile-clicked {
+        background-color: rgb(83, 177, 114);
+    }
+    
+.x1 {
+        color: blue;
+    }
+    
+.x2 {
+        color: red;
+    }
+    
+.x3 {
+        color: yellow;
+    }
+    
+.x4 {
+        color: brown;
+    }
+    
+.x5 {
+        color: black;
+    }
+    
+.x6 {
+        color: navy;
+    }
+    
+.x7 {
+        color: purple;
+    }
+    
+.x8 {
+        color: white;
+    }
+    
+    
+
+button {
+    background-color: rgb(233, 205, 68);
+}
+svg {
+    height: 40px;
+    width: 60px;
+    border: none;
+    background-color: rgb(233, 205, 68);
 
 }
