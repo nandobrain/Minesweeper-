@@ -1,7 +1,7 @@
 
 let mineAmount = 10
 let minesLocation = [] 
-
+let gameOver = false
 
 // logic for mine placement
 let initializeMines = (mineAmount) => {
@@ -33,13 +33,16 @@ let checkSquare = (square) => {
 clickedSquare = parseInt(square.target.classList[1]) 
 // target the style
 squareMorph = square.target.style
-// boolean too check for mines
+// boolean too check for mines 
+
 if (minesLocation.includes(clickedSquare)) {
-    console.log('this is a mine')
-    console.log(square)
+    square.target.classList.add("hidden-image")
+   revealMines()
+   
 } else {
     console.log(squareMorph)
-    
+    console.log(clickedSquare)
+
     squareMorph.backgroundColor = "rgb(83, 177, 114)"
 }
     
@@ -52,7 +55,25 @@ if (minesLocation.includes(clickedSquare)) {
 let boardArea = document.getElementsByClassName("box")
 // boardArea[i].addEventListener("click", checkSquare)
 
-for (i = 0; i < boardArea.length; i++) {
+for (let i = 0; i < boardArea.length; i++) {
     boardArea[i].addEventListener("click", checkSquare)
     
 }
+
+
+let revealMines = () => {
+    console.log(minesLocation)
+
+
+    for (let i = 0; i < boardArea.length; i++) {
+       console.log(boardArea[i].classList[1])
+
+        if (minesLocation.includes(parseInt(boardArea[i].classList[1]))) {
+            console.log('text')
+
+            boardArea[i].classList.add("hidden-image")
+           
+        }
+    }
+}
+
