@@ -17,7 +17,12 @@ App’s Function-
 
 ![Screen Shot 2023-01-06 at 10 32 31 AM](https://user-images.githubusercontent.com/119142370/211076497-0044e934-ae5d-4a48-8531-62eb77454ca5.png)
 
+
+
 Loss
+
+
+
 ![Screen Shot 2023-01-06 at 10 52 14 AM](https://user-images.githubusercontent.com/119142370/211079414-80b84a9e-b15b-487d-ab29-a3622180fae4.png)
 
 
