@@ -27,3 +27,32 @@ startButton.addEventListener("click", startGame)
 
 
 
+
+let checkSquare = (square) => {
+// if mine location is equal to a numnber in mineLocations, show the mine in the game
+clickedSquare = parseInt(square.target.classList[1]) 
+// target the style
+squareMorph = square.target.style
+// boolean too check for mines
+if (minesLocation.includes(clickedSquare)) {
+    console.log('this is a mine')
+    console.log(square)
+} else {
+    console.log(squareMorph)
+    
+    squareMorph.backgroundColor = "rgb(83, 177, 114)"
+}
+    
+    
+}
+
+
+// make grid and make it so it is clickable
+
+let boardArea = document.getElementsByClassName("box")
+// boardArea[i].addEventListener("click", checkSquare)
+
+for (i = 0; i < boardArea.length; i++) {
+    boardArea[i].addEventListener("click", checkSquare)
+    
+}
